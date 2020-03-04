@@ -15,3 +15,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+if platform?('windows')
+  include_recipe 'chef-client::default'
+  include_recipe 'chef-client::config'
+  include_recipe 'chef-client::task'
+  include_recipe 'audit::default'
+else
+  include_recipe 'chef-client::default'
+  include_recipe 'chef-client::config'
+  include_recipe 'chef-client::service'
+  include_recipe 'audit::default'
+end

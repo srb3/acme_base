@@ -1,0 +1,11 @@
+default['audit']['reporter'] = 'chef-server-automate'
+default['audit']['fetcher'] = 'chef-server'
+default['audit']['profiles']['linux_cis_rhel_cis'] = {'compliance': 'admin/cis-rhel7-level1-server'}
+default['audit']['profiles']['windows_server_2016_cis'] = {'compliance': 'admin/cis-windows2016rtm-release1607-level1-memberserver'}
+default['chef_client']['interval'] = '60'
+default['chef_client']['splay'] = '5'
+default['chef_client']['config']['client_fork'] = true
+default['chef_client']['config']['ssl_verify_mode'] = ':verify_none'
+default['chef_client']['config']['verify_api_cert'] = false
+default['chef_client']['chef_license'] = 'accept'
+default['chef_client']['task']['frequency_modifier'] = 1

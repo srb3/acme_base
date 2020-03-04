@@ -6,6 +6,8 @@ description 'Installs/Configures acme_base'
 long_description 'Installs/Configures acme_base'
 version '0.1.0'
 chef_version '>= 14.0'
+depends 'chef-client'
+depends 'audit'
 
 %w(windows centos).each do |os|
   supports os
