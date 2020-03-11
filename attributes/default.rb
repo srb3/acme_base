@@ -1,7 +1,7 @@
 default['audit']['reporter'] = 'chef-server-automate'
 default['audit']['fetcher'] = 'chef-server'
-default['audit']['profiles']['linux_cis_rhel_cis'] = {'compliance': 'admin/cis-rhel7-level1-server'}
-default['audit']['profiles']['windows_server_2016_cis'] = {'compliance': 'admin/cis-windows2016rtm-release1607-level1-memberserver'}
+default['audit']['profiles']['linux_baseline'] = {'compliance': 'admin/linux-baseline'}
+default['audit']['profiles']['windows_baseline'] = {'compliance': 'admin/windows-baseline'}
 default['chef_client']['interval'] = '60'
 default['chef_client']['splay'] = '5'
 default['chef_client']['config']['client_fork'] = true
