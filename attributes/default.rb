@@ -1,7 +1,8 @@
 default['audit']['reporter'] = 'chef-server-automate'
 default['audit']['fetcher'] = 'chef-server'
-default['audit']['profiles']['linux_baseline'] = {'compliance': 'admin/linux-baseline'}
-default['audit']['profiles']['windows_baseline'] = {'compliance': 'admin/windows-baseline'}
+default['audit']['profiles'] = {}
+#default['audit']['profiles']['linux_baseline'] = {'compliance': 'admin/linux-baseline'}
+#default['audit']['profiles']['windows_baseline'] = {'compliance': 'admin/windows-baseline'}
 default['chef_client']['interval'] = '60'
 default['chef_client']['splay'] = '5'
 default['chef_client']['config']['client_fork'] = true
